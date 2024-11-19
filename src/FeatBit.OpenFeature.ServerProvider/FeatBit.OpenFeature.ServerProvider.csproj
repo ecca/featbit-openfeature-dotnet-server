@@ -1,0 +1,42 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>netstandard2.0</TargetFramework>
+        <GenerateDocumentationFile>true</GenerateDocumentationFile>
+        <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+        
+        <AssemblyName>FeatBit.OpenFeature.ServerProvider</AssemblyName>
+        <OutputType>Library</OutputType>
+        <PackageId>FeatBit.OpenFeature.ServerProvider</PackageId>
+        <RootNamespace>FeatBit.OpenFeature.ServerProvider</RootNamespace>
+        <PackageTags>feature, openfeature, featbit</PackageTags>
+        <Version>0.0.2</Version>
+        <Description>OpenFeature provider for FeatBit</Description>
+        <Authors>Liam Löfgren</Authors>
+        <PackageProjectUrl>https://github.com/ecca/featbit-openfeature-dotnet-server</PackageProjectUrl>
+        <!--<PackageLicenseFile></PackageLicenseFile>-->
+        <RepositoryUrl>https://github.com/ecca/featbit-openfeature-dotnet-server</RepositoryUrl>
+
+        <LangVersion>default</LangVersion>
+        <RepositoryBranch>main</RepositoryBranch>
+        <IncludeSymbols>true</IncludeSymbols>
+        <SymbolPackageFormat>snupkg</SymbolPackageFormat>
+        <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+
+        <!-- fail if XML comments are missing or invalid -->
+        <WarningsAsErrors>1570,1571,1572,1573,1574,1580,1581,1584,1591,1710,1711,1712</WarningsAsErrors>
+    </PropertyGroup>
+
+    <ItemGroup Condition="'$(Configuration)' != 'Release'">
+        <InternalsVisibleTo Include="FeatBit.OpenFeature.ServerProvider.Tests" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <PackageReference Include="FeatBit.ServerSdk" Version="1.2.2" />
+        <PackageReference Include="OpenFeature" Version="2.0.0" />
+    </ItemGroup>
+
+    <PropertyGroup>
+        <DocumentationFile>bin\$(Configuration)\$(TargetFramework)\FeatBit.OpenFeature.ServerProvider.xml</DocumentationFile>
+    </PropertyGroup>
+</Project>

@@ -1,0 +1,30 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{EACC168E-D64C-464F-B696-52B45E2DEA9B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{79E6547E-0E59-4DB6-AD2F-7AD5431340FA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FeatBit.OpenFeature.ServerProvider", "src\FeatBit.OpenFeature.ServerProvider\FeatBit.OpenFeature.ServerProvider.csproj", "{3E1782BD-029E-4271-90BF-EB21D2ED10C2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FeatBit.OpenFeature.ServerProvider.Tests", "tests\FeatBit.OpenFeature.ServerProvider.Tests\FeatBit.OpenFeature.ServerProvider.Tests.csproj", "{3A11B895-0C33-4D12-A0ED-FB41A75A5580}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{3E1782BD-029E-4271-90BF-EB21D2ED10C2} = {EACC168E-D64C-464F-B696-52B45E2DEA9B}
+		{3A11B895-0C33-4D12-A0ED-FB41A75A5580} = {79E6547E-0E59-4DB6-AD2F-7AD5431340FA}
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3E1782BD-029E-4271-90BF-EB21D2ED10C2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3E1782BD-029E-4271-90BF-EB21D2ED10C2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3E1782BD-029E-4271-90BF-EB21D2ED10C2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3E1782BD-029E-4271-90BF-EB21D2ED10C2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3A11B895-0C33-4D12-A0ED-FB41A75A5580}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3A11B895-0C33-4D12-A0ED-FB41A75A5580}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3A11B895-0C33-4D12-A0ED-FB41A75A5580}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3A11B895-0C33-4D12-A0ED-FB41A75A5580}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
